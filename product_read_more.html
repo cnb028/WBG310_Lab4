@@ -1,0 +1,93 @@
+﻿-
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Games</title>
+    <link href="css/jquery-ui.min.css" rel="stylesheet">
+    <link href="css/site.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#tabContainer').tabs({
+                show: 'fadeIn',
+                hide: 'fadeOut'
+            });
+            var hash = location.hash;
+            if (hash) {
+                $('#tabContainer').tabs("load", hash)
+            }
+
+        }); // end ready
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            Christine Bettencourt
+        </header>
+        <div class="content">
+            <div class="main">
+                <h1>Tabletop Simulator Games</h1>
+                <h2>While there are a lot of games to play, these are the ones I enjoy with my friends.</h2>
+                <div id="tabContainer">
+                    <ul>
+                        <li><a href="#panel1">Marvel United</a></li>
+                        <li><a href="#panel2">Stardew Valley</a></li>
+                        <li><a href="#panel3">Red Dragon Inn</a></li>
+                    </ul>
+                    <!-- panel 1 -->
+                    <div id="panel1">
+                        <h2><img src="images\marvel.jpg" style="float:right" height="150" alt="Marvel United">A co-op board game that is fast paced.</h2>
+                        <p>In Marvel United you take the role of iconic Marvel Heroes cooperating to stop the master plan of a powerful Villain controlled by the game. Each Villain unveils their unique master plan, 
+                        with cards that trigger different effects, and threats that pose challenges across the locations. Heroes must choose carefully the cards to play from their unique decks, that not only offer 
+                        different actions and superpowers to use, but also combine with the actions of other Heroes to do the impossible. Build your storyline, unite your powers, save the day!</p>
+
+                        <iframe width="480" height="270" src="https://www.kickstarter.com/projects/cmon/marvel-united/widget/video.html" frameborder="0" scrolling="no"> </iframe>                   
+                    </div>
+                    <!-- panel 2 -->
+                    <div id="panel2">
+                        <h2><img src="images\sdboard.jpeg" style="float:right" height="150" alt="stardew">A co-op board game based on Stardew Valley </h2>
+                        <p>
+                            This board game is for up to 4 players, and can be pretty long depending on the style of play and the players themselves. The game has 4 types of players:<br />
+                            <ul>
+                                <li>
+                                    <p>Farmer</p>
+                                </li>
+                                <li>
+                                    <p>Fisher</p>
+                                </li>
+                                <li>
+                                    <p>Forager</p>
+                                </li>
+                                <li>
+                                    <p>Miner</p>
+                                </li>
+                            </ul>
+                        </p>
+                        <p>
+                            The different styles of players allows for different strengths and weaknesses. They also allow for various styles of teaming up. The Miner can get the ores to upgrade the Farmer
+                            and the forager. Once they are upgrades, the Forager buys the seeds and the Farmer can water the seeds. If the Forager is buying the seeds, this allows for multiple seeds to be stacked
+                            ontop of one another creating a higher increase of crop income. The Farmer watering the seeds after being upgraded allows for faster harvests. The fisher can help by creating more income
+                            but also getting more things you can give as presents to the villagers to make friends.
+                        </p>
+                        <p>
+                            You can purchase the board game at the <a href="https://shop.stardewvalley.net/products/stardew-valley-the-board-game">Stardew Valley Merchandise</a> website.
+                        </p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/31Sz4vMWYes" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <!-- panel 3 -->
+                    <div id="panel3">
+                        <h2><img src="images\rdinn.jpeg" style="float:right" height="150" alt="red dragon inn">A game of gambling and drinking while having DND vibes for the characters.</h2>
+                        <p>I feel the video below explains the game enough. This is a very fun party game that pits you against your friends as you try to out drink, our gamble, and over all try to be the last person standing.</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w8yseyJYawk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>WBG310 July 2022</footer>
+</body>
+</html>
